@@ -1,0 +1,46 @@
+.redo-controller-container{
+	border: 1px solid rgb(190, 190, 190);
+	width: 100%;
+	padding: 24px;
+	.btn-box{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 24px;
+	}
+
+	.execute-index-box{
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	.undo-light {
+		display: flex;
+		width: 120px;
+		padding: 12px;
+		font-size: 16px;
+		font-weight: 600;
+		color: green;
+	}
+
+	.undo-normal {
+		display: flex;
+		padding: 12px;
+		color: grey;
+	}
+
+	.redo-demo-container {
+		display: flex;
+		width: 100%;
+		&>:nth-child(1) {
+			width: 300px;
+			border: 1px solid rgb(187 187 187);
+		}
+		&>:nth-child(2) {
+			flex: 1;
+		}
+	}
+
+}
+
+
+

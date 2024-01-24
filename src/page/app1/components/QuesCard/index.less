@@ -1,0 +1,40 @@
+.card-container {
+  height: 120px;
+  width: 480px;
+  padding: 12px 0;
+  position: relative;
+  overflow: hidden;
+  .content-container {
+    background-color: white;
+    height: 100%;
+    border: 1px solid rgb(172, 172, 172);
+    padding: 12px;
+	border-radius: 12px;
+  }
+
+  .active-card{
+	border: 2px solid #1a1acb;
+  }
+
+  .del-container{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: calc(100%);
+    padding: 12px 0;
+    width: 48px;
+  }
+
+  .del-container-active{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(227, 83, 16);
+    color: white;
+    border-radius: 0 12px 12px 0;
+    border-top: 2px solid #1a1acb;
+    border-right: 2px solid #1a1acb;
+    border-bottom: 2px solid #1a1acb;
+  }
+}
