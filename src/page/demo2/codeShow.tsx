@@ -5,14 +5,22 @@ const App = () => {
     <div>
       <br />
       <div style={{ fontSize: 16 }}>
-        非受控组件的不同点在于，组件自身内部会维护数据，不需要在组件外部维护。
+        <div>
+          非受控组件的不同点在于，组件自身内部会维护数据，不需要在组件外部维护。
+        </div>
         <br />
-        因此，用户修改表单的同时，组件内部会自动维护数据更新，此时，如果在commandMap.updateForm的redo里也更新表单，就会造成2次修改。
+        <div>
+          因此，用户修改表单的同时，组件内部会自动维护数据更新，此时，如果在commandMap.updateForm的redo里也更新表单，就会造成2次修改。
+        </div>
         <br />
-        为了解决这个问题，在redo函数中不做任何操作，而是直接将参数返回
+        <div>
+          为了解决这个问题，在redo函数中不做任何操作，而是直接将参数返回，相当于保存参数
+        </div>
         <br />
-        在下一次redo的时候，拿到redo的返回值，再更新表单
+        <div>在下一次redo的时候，拿到redo的返回值，再更新表单</div>
       </div>
+      <br />
+
       <SyntaxHighlighter
         showLineNumbers={true}
         startingLineNumber={0}

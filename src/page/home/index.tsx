@@ -2,10 +2,16 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, Outlet, useLocation } from "react-router-dom";
 import { Layout, Menu, theme } from "antd";
+import "./index.less";
+import { ExportOutlined } from "@ant-design/icons";
 
 const { Header, Content, Footer, Sider } = Layout;
 
 const items = [
+  {
+    key: "/video",
+    label: "视频编辑",
+  },
   {
     key: "/intro",
     label: "基本用法",
@@ -43,6 +49,8 @@ const App: React.FC = () => {
       return "/intro";
     } else if (url.indexOf("app1") !== -1) {
       return "/app1";
+    } else if (url.indexOf("video") !== -1) {
+      return "/video";
     }
   };
 
@@ -92,7 +100,17 @@ const App: React.FC = () => {
             background: colorBgContainer,
           }}
         >
-          基于注册方法机制的撤销回退插件
+          <div className="header-container">
+            <div>基于注册方法机制的撤销回退插件</div>
+            <a
+            target="_blank"
+              className="github-container"
+              href="https://github.com/bzzz1023/react-use-redo-undo"
+            >
+              Github
+              <ExportOutlined />
+            </a>
+          </div>
         </Header>
         <Content style={{ margin: "24px 16px 0" }}>
           <div
