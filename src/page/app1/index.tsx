@@ -22,16 +22,6 @@ const App = () => {
     { id: 4, name: "和朋友吃饭4", sort: 4, content: "" },
   ]);
 
-  //
-
-  const func = ()=>{
-    const  updateStep = {
-      updateType:"card",
-      beforeUpdateDate:{},
-      // afterUp
-    }
-  }
-
   const {
     registerCommand,
     redo,
